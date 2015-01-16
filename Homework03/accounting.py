@@ -12,7 +12,7 @@ def main():
         data = line.split(",")
         melon_type = data[1]
         melon_count = int(data[2])
-        melon_tallies[melon_type] += melon_count
+        melon_tallies[melon_type] += melon_count #wtf does this do? -AMG 1-14-2015
     f.close()
     
     total_revenue = 0
