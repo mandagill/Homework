@@ -15,10 +15,13 @@ def main():
         salesperson = entries[0]
         melons = int(entries[2])
 
+# Checks if the salesperson has been added to the list
         if salesperson in salespeople:
             position = salespeople.index(salesperson)
+            #If so, adds the melon sales count to the point in the melons sold list that corresponds to the sales person's sales
             melons_sold[position] += melons
         else:
+            #If not, add the sales person and the melons sold to the end of their respective lists.
             salespeople.append(salesperson)
             melons_sold.append(melons)
 

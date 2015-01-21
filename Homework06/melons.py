@@ -1,24 +1,14 @@
-melon_name = {
-    1: "Honeydew",
-    2: "Crenshaw",
-    3: "Crane",
-    4: "Casaba",
-    5: "Cantaloupe",
-}
+# Need the ability to track flesh color, rind color and weight
+# Let's nest some dictionaries, eh?
+# Using a tuple since it's immutablem so querying on index will be (a bit more) reliable.
 
-melon_price = {
-    1: 0.99,
-    2: 2.00,
-    3: 2.50,
-    4: 2.50,
-    5: 0.99,
-}
+# Tuple values: 0=price, 1=flesh color, 2=rind color, 3=weight, 4=seedless?
 
-melon_seedless = {
-    1: True,
-    2: False,
-    3: False,
-    4: False,
-    5: False,
+melons = {
+    'Honeydew': (0.99, 'green', 'pale green', '2 lbs', True),
+    'Crenshaw': (2.00, None, None, '1.5 lbs', False),
+    'Crane': (2.50, None, None, '1 lb', False),
+    'Casaba': (2.50, None, None, '4 lb', False),
+    'Cantaloupe': (0.99, 'orange', 'tan', '1.5 lb', False)
+    
 }
-
